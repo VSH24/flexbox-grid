@@ -17,7 +17,7 @@ footer {
 	flex-flow: row;
 }
 
-.flowCol {
+.group {
 	display: flex;
 	flex-flow: column;
 }
