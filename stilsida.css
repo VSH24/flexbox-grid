@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;
+}
+/****** Flexbox flow ******/
+body {
+	max-width: 60em;
+	margin:0 auto;
+	padding: 0;
+	display: flex;
+	flex-flow: column;
+}
+header,
+nav,
+div,
+footer {
+  	display: flex;
+	flex-flow: row;
+}
+
+.flowCol {
+	display: flex;
+	flex-flow: column;
+}
+
+/****** Grind III ******/
+.I-III {
+	width: 33.3334%;
+}
+.II-III {
+	width: 66.6667%
+}
+/****** Grind IV ******/
+.I-IV {
+	width: 25%;
+}
+.I-II {
+	width: 50%;
+}
+/****** Grind V ******/
+.I-V {
+	width: 20%; 
+}
+.II-V {
+	width: 40%; 
+}
+.III-V {
+	width: 60%; 
+}
+.IV-V {
+	width: 80%;
+}
+.I-I,
+.V-V {
+	width: 100%; 
+}
+
+/****** Layout ******/
+section {
+	border:1px solid white;
+	background: tomato;
+}
+section p {
+	font-size: 1.5em;
+	text-align: center;
+	color: white;
+	margin: 1em 0;
+	padding: 0;
+}
