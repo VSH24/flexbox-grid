@@ -1,68 +1,43 @@
 * {
     box-sizing: border-box;
 }
-/****** Flexbox flow ******/
 body {
 	max-width: 60em;
-	margin:0 auto;
-	padding: 0;
-	display: flex;
-	flex-flow: column;
+ 	margin: 0 auto;
 }
-header,
-nav,
-div,
-footer {
-  	display: flex;
-	flex-flow: row;
-}
-
-.group {
-	display: flex;
-	flex-flow: column;
-}
-
-/****** Grind III ******/
-.I-III {
-	width: 33.3334%;
-}
-.II-III {
-	width: 66.6667%
-}
-/****** Grind IV ******/
-.I-IV {
-	width: 25%;
-}
-.I-II {
-	width: 50%;
-}
-/****** Grind V ******/
-.I-V {
-	width: 20%; 
-}
-.II-V {
-	width: 40%; 
-}
-.III-V {
-	width: 60%; 
-}
-.IV-V {
-	width: 80%;
-}
-.I-I,
-.V-V {
-	width: 100%; 
-}
-
-/****** Layout ******/
+/******         Flexbox         ******/
 section {
-	border:1px solid white;
-	background: tomato;
+  display: flex;
 }
-section p {
-	font-size: 1.5em;
+/****** Flex -grow -shrink -base ******/
+div {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0;
+
+    border:1px solid white;
+    border-width: 0 1px 1px 0;
+    padding: .3em;
+	background: tomato;
+	font-size: 1.2em;
 	text-align: center;
 	color: white;
-	margin: 1em 0;
-	padding: 0;
+}
+
+.II-I {
+  flex-grow: 2;
+  flex-shrink: 2;
+  flex-basis: 1.3em;
+}
+
+.III-I {
+  flex-grow: 3;
+  flex-shrink: 3;
+  flex-basis: 2em;
+}
+
+.IV-I {
+  flex-grow: 4;
+  flex-shrink: 4;
+  flex-basis: 2.6em;
 }
