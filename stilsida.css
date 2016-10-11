@@ -5,9 +5,21 @@ body {
 	max-width: 60em;
  	margin: 0 auto;
 }
-/******         Flexbox         ******/
-section {
+footer div {
+  background: transparent;
+  color: #555;
+}
+/******  Flexbox  rows & columns   ******/
+.col {
   display: flex;
+  flex-flow: column;
+  border: 1px solid blue;   /* border only for demonstration */
+  border-width: 0 1px 1px 0;
+}
+.row {
+  display: flex;
+  flex-flow: row;
+
 }
 /****** Flex -grow -shrink -base ******/
 div {
@@ -15,29 +27,31 @@ div {
   flex-shrink: 1;
   flex-basis: 0;
 
-    border:1px solid white;
-    border-width: 0 1px 1px 0;
-    padding: .3em;
-	background: tomato;
-	font-size: 1.2em;
-	text-align: center;
-	color: white;
+  border:1px solid white;  /* Layout for demonstration */
+  border-width: 0 1px 1px 0;
+  background: tomato;
+  color: white;
+  text-align: center;
+  padding: .3em;
 }
 
 .II-I {
   flex-grow: 2;
   flex-shrink: 2;
-  flex-basis: 1.3em;
+  flex-basis: 1.4em;
 }
 
 .III-I {
   flex-grow: 3;
   flex-shrink: 3;
-  flex-basis: 2em;
+  flex-basis: 2.1em;
 }
 
 .IV-I {
   flex-grow: 4;
   flex-shrink: 4;
-  flex-basis: 2.6em;
+  flex-basis: 2.7em;
 }
+
+
+

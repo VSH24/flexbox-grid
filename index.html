@@ -7,75 +7,111 @@
 	<meta name="author" content="Guðmundur Jón Guðjónsson">
 	<title>Flexbox grindakerfi</title>
 	<link rel="stylesheet" type="text/css" href="normalize.css">
-	<link rel="stylesheet" type="text/css" href="stilsidan.css">
+	<link rel="stylesheet" type="text/css" href="stilsida.css">
 </head>
 <body>
 	<h1>Flexbox grindakerfi</h1>
 
 	<h2>Flex 1 dálkur</h2>
-	<section>
+	<section class="row">
 		<div>Dálkur</div>
 	</section>
 
-	<h2>Flex 2 dálkar</h2>
-	<section>
+	<h2>Flex 2 dálka röð</h2>
+	<section class="row">
 		<div>Dálkur</div>
 		<div>Dálkur</div>
 	</section>
 
-	<h2>Flex 3 dálkar</h2>
-	<section>
+	<h2>Flex 3 dálka röð</h2>
+	<section class="row">
 		<div>Dálkur</div>
 		<div>Dálkur</div>
 		<div>Dálkur</div>
 	</section>
-	<section>
+	<section class="row">
 		<div class="II-I">Flex grow 2 dálkar</div>
 		<div>Dálkur</div>
 	</section>
 
-	<h2>Flex 4 dálkar</h2>
-	<section>
+	<h2>Flex 4 dálka röð</h2>
+	<section class="row">
 		<div>Dálkur</div>
 		<div>Dálkur</div>
 		<div>Dálkur</div>
 		<div>Dálkur</div>
 	</section>
-	<section>
+	<section class="row">
 		<div class="II-I">Flex grow 2 dálkar</div>
 		<div>Dálkur</div>
 		<div>Dálkur</div>
 	</section>
-	<section>
+	<section class="row">
 		<div class="III-I">Flex grow 3 dálkar</div>
 		<div>Dálkur</div>
 	</section>
 
-	<h2>Flex 5 dálkar</h2>
-	<section>
+	<h2>Flex 5 dálka röð</h2>
+	<section class="row">
 		<div>Dálkur</div>
 		<div>Dálkur</div>
 		<div>Dálkur</div>
 		<div>Dálkur</div>
 		<div>Dálkur</div>
 	</section>
-	<section>
+	<section class="row">
 		<div class="II-I">Flex grow 2 dálkar</div>
 		<div>Dálkur</div>
 		<div>Dálkur</div>
 		<div>Dálkur</div>
 	</section>
-	<section>
+	<section class="row">
 		<div class="III-I">Flex grow 3 dálkar</div>
 		<div>Dálkur</div>
 		<div>Dálkur</div>
 	</section>
-	<section>
+	<section class="row">
 		<div class="IV-I">Flex grow 4 dálkar</div>
 		<div>Dálkur</div>
 	</section>
-
-	<p> &copy; 2016 Guðmundur Jón Guðjónsson - <a href="https://github.com/VSH24/flexbox-grid" target="_blank"> Github/vsh24/flexbox-grid</a></p>
-	<p>Source: <a href="https://github.com/LandonSchropp/unraveling_flexbox" target="_blank"> Landon Schropp </a></p>
+	<h2>Flex 2 dálkar með 3 röðum</h2>
+	<section class="row">	
+		<section class="col II-I">
+			<section class="row">
+				<div>Dálkur</div>
+				<div>Dálkur</div>
+				<div>Dálkur</div>
+			</section>
+			<section class="row">
+				<div>Dálkur</div>
+				<div>Dálkur</div>
+			</section>
+			<section class="row">
+				<div>Dálkur</div>
+			</section>
+		</section><!-- end of col -->
+		<section class="col II-I">
+			<section class="row">
+				<div>Dálkur</div>
+				<div>Dálkur</div>
+			</section>
+			<section class="row">
+				<div>Dálkur</div>
+			</section>
+			<section class="row">
+				<div>Dálkur</div>
+				<div>Dálkur</div>
+				<div>Dálkur</div>
+			</section>
+		</section><!-- end of col -->
+	</section><!-- end of row whith 2 columns -->
+	<footer class="row">
+		<div>
+			<p>&copy; 2016 Guðmundur Jón Guðjónsson - <a href="https://github.com/VSH24/flexbox-grid" target="_blank"> Github/vsh24/flexbox-grid</a></p>
+		</div>
+		<div>
+			<p>Source: <a href="https://github.com/LandonSchropp/unraveling_flexbox" target="_blank"> Landon Schropp </a></p>
+		</div>
+	</footer>
 </body>
 </html>
