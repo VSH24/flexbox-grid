@@ -9,49 +9,64 @@ footer div {
   background: transparent;
   color: #555;
 }
-/******  Flexbox  rows & columns   ******/
+/******  columns   ******/
 .col {
   display: flex;
   flex-flow: column;
-  border: 1px solid blue;   /* border only for demonstration */
+
+/* Layout */
+  border: 1px solid blue;   
   border-width: 0 1px 1px 0;
 }
+
+/* mobile = 0 to 37.5em */
 .row {
   display: flex;
-  flex-flow: row;
+  flex-flow: column;
 
 }
-/****** Flex -grow -shrink -base ******/
+/****************************** 
+    flex-grow: n;
+    flex-shrink: n;
+    flex-basis: n px,em,%;
+*******************************/
 div {
-  flex-grow: 1;
-  flex-shrink: 1;
-  flex-basis: 0;
 
-  border:1px solid white;  /* Layout for demonstration */
+  flex:1 1 0;
+
+/* Layout */
+  border:1px solid white;  
   border-width: 0 1px 1px 0;
   background: tomato;
   color: white;
   text-align: center;
   padding: .3em;
 }
+/****** 37.5em + ******/
+@media screen and (min-width: 37.5em) {
 
-.II-I {
-  flex-grow: 2;
-  flex-shrink: 2;
-  flex-basis: 1.4em;
+  .row {
+    display: flex;
+    flex-flow: row;
+  }
+
+  .I-I {
+    flex: 1 1 0;
+  }
+
+  .II-I {
+    flex: 2 2 1.4em;
+  }
+
+  .III-I {
+    flex: 3 3 2.1em;
+  }
+
+  .IV-I {
+    flex: 4 4 2.7em;
+  }
+  .mobile {
+    display: none;
+  }
 }
-
-.III-I {
-  flex-grow: 3;
-  flex-shrink: 3;
-  flex-basis: 2.1em;
-}
-
-.IV-I {
-  flex-grow: 4;
-  flex-shrink: 4;
-  flex-basis: 2.7em;
-}
-
-
 
