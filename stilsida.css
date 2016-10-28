@@ -32,8 +32,6 @@ footer div {
 *******************************/
 div {
 
-  flex:1 1 0;
-
 /* Layout */
   border:1px solid white;  
   border-width: 0 1px 1px 0;
