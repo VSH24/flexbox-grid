@@ -32,8 +32,8 @@ footer div {
     = flex: n n n;
 *******************************/
 div {
-
-  flex:1 1 0;
+  flex: 1 1 0;
+}
 
 /* Layout */
 div {
