@@ -28,7 +28,7 @@ footer div {
 /****************************** 
     flex-grow: n;
     flex-shrink: n;
-    flex-basis: n px,em,%;
+    flex-basis: n (px,em,%);
 *******************************/
 div {
 
