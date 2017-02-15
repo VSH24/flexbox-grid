@@ -25,15 +25,7 @@ footer div {
   flex-flow: column;
 }
 
-/****************************** 
-    flex-grow: n;
-    flex-shrink: n;
-    flex-basis: n (n, px,em,%, auto);
-    = flex: n n n;
-*******************************/
 div {
-  flex: 1 1 0;
-
   border:1px solid white;  
   border-width: 0 1px 1px 0;
   background: tomato;
@@ -41,6 +33,12 @@ div {
   text-align: center;
   padding: .3em;
 }
+/****************************** 
+    flex-grow: n;
+    flex-shrink: n;
+    flex-basis: n (n, px,em,%, auto);
+    
+    = flex: n n n;
 
 /****** 600px ~ 37.5em + ******/
 @media screen and (min-width: 37.5em) {
