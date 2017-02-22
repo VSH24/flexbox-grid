@@ -13,7 +13,8 @@ footer div {
 .col {
   display: flex;
   flex-flow: column;
-
+/* The flex-flow property is a shorthand property for the flex-direction and the flex-wrap properties. */
+	
 /* Layout */
   border: 1px solid blue;   
   border-width: 0 1px 1px 0;
